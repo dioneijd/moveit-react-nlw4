@@ -1,3 +1,4 @@
+import GitLoginBox from '../components/GitLoginBox'
 import style from '../styles/pages/Login.module.css'
 
 export default function Login() {
@@ -11,12 +12,7 @@ export default function Login() {
                     <img src="/git-logo.svg" alt=""/>
                     <p>Faça seu login com o seu usuario do Github</p>
                 </div>
-                <form>
-                    <input type="text"/>
-                    <button type="submit">
-                        <img src="/icons/arrow-right.svg" alt=""/>
-                    </button>
-                </form>
+                <GitLoginBox />
             </aside>
         </div>
     )

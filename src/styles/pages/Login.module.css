@@ -52,38 +52,3 @@
     font-size: 1.25rem;
     color: var(--blue-light);
 }
-
-
-.container aside > form {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-
-.container aside > form > input {
-    border: 0;
-    border-radius: 5px 0 0 5px;
-    padding-left: 1rem;
-    height: 5rem;
-    width: 21.25rem;
-    color: var(--white);
-
-    background: linear-gradient(to right, var(--blue-dark), var(--blue-dark-a20));
-}
-
-
-.container aside > form > input:focus {
-    outline: solid 2px var(--white);
-    outline-offset: -2px;
-}
-
-.container aside > form > button {
-    border: 0;
-    border-radius: 0 5px 5px 0;
-    height: 5rem;
-    width: 5rem;
-    background-color: var(--green);
-    font-size: 0;
-}
