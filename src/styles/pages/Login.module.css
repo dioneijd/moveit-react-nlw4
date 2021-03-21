@@ -1,0 +1,54 @@
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 2.5rem 0 0;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background: var(--blue);
+
+    align-items: center;
+}
+
+.container > img {
+    max-height: 100vh;
+    height: 41.25rem;
+}
+
+
+.container aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container aside h1 {
+    margin: 6rem 0 2rem 0;
+    color: var(--white);
+    font-family: inter;
+    font-size: 2.25rem;
+}
+
+.container aside > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+.container aside > div {
+    margin-bottom: 2rem;
+}
+
+.container aside > div > img {
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.container aside > div > p {
+    font-family: inter;
+    font-size: 1.25rem;
+    color: var(--blue-light);
+}
