@@ -11,6 +11,7 @@ export function Countdown(){
         seconds, 
         hasFinished, 
         isActive, 
+        timePerc,
         startCountdown, 
         resetCountdown 
     } = useContext(CountdownContext)
@@ -41,7 +42,9 @@ export function Countdown(){
                     disabled
                     className={`${styles.countdownButton} ${styles.disabledCountdownButton} `}
                 >
-                Ciclo Encerrado
+                    Ciclo Encerrado
+                    
+                    <div style={{width: `${timePerc}%` }} ></div>
                 </button>
 
             ) : (
@@ -53,7 +56,9 @@ export function Countdown(){
                             className={`${styles.countdownButton} ${styles.abortCountdownButton} `}
                             onClick={resetCountdown}
                         >
-                        Abandonar o ciclo
+                            Abandonar o ciclo
+                        
+                            <div style={{width: `${timePerc}%` }} ></div>
                         </button>
                     
                     ) : (
@@ -64,6 +69,8 @@ export function Countdown(){
                             onClick={startCountdown}
                         >
                             Iniciar um ciclo
+                            
+                            <div style={{width: `${timePerc}%` }} ></div>
                         </button> 
                     )}
                 </>
